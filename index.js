@@ -22,7 +22,7 @@ client.once("ready", () => {
 });
 
 client.on("messageCreate", async (msg) => {
-  if (msg.author === client.user) return;
+  if (msg.author.bot) return;
 
   console.log(msg.author);
 
